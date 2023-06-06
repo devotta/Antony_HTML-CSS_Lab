@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        body {
+            margin: 0%;
+            height: auto
+        }
+
+        .hdr {
+            width: 100%;
+            background-color: red;
+            color: black;
+        }
+
+        .hdr h1 {
+            margin: 0;
+            padding: 0;
+            text-align: right;
+            padding-right: 10%;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: grey;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            text-align: left;
+            display: block;
+
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: grey;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .navbar a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hdr">
+        <h1>Dropdown Demo</h1>
+    </header>
+
+    <nav class="navbar">
+        <a href="#link1">Link1</a>
+        <div class="dropdown">
+            <button class="dropbtn">Link2 </button>
+            <div class="dropdown-content">
+                <a href="#">D-Link 21</a>
+                <a href="#">D-Link 22</a>
+                <a href="#">D-Link 23</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Link3 </button>
+            <div class="dropdown-content">
+                <a href="#">D-Link - 31</a>
+                <a href="#">D-Link - 32</a>
+                <a href="#">D-Link - 33</a>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
